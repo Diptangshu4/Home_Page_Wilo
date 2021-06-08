@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 33%;
+    border-radius: 50px;
+    filter: invert(100%);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.nav-list{
+    width: 70%;
+    /* background-color: rgb(116, 23, 30); */
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    color: rgb(129, 121, 121);
+}
+.rightNav{
+    /* background-color: black; */
+    width: 30%;
+    text-align: right;
+    padding: 0 23px;
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 9px;
+}
+.btn{
+    background-color: transparent;
+    color: white;
+    border: 2px solid transparent;
+    font-size: 18px;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('img/red-wine-2443699_1920.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstSection{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 100%;
+}
+.firstHalf{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.secondHalf{
+    width: 20%;
+}
+.secondHalf img{
+    width: 310%;
+    padding: 12px 12px;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    display: block;
+    margin: auto;
+}
+.text-big{
+    font-size: 88px;
+}
+.text-small{
+    font-size: 43px;
+}
+.firstHalf button{
+    width: 30%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: right;
+    padding: 20px 0px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-family: cursive;
+    cursor: pointer;
+}
+.secRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;
+    padding: 80px;
+}
+.sectionTag{
+    background-color: white;
+    padding: 0 20px;
+    right: 30px;
+    font-size: 60px;
+}
+.sectionSubTag{
+    background-color: white;
+    padding: 10px 20px;
+    right: 30px;
+}
+.right{
+    justify-content: right;
+    padding: 65px;
+}
+.secLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;
+    padding: 80px;
+    flex-direction: row-reverse;
+}
+.contact{
+    background-color: rgb(218, 216, 216);
+    height: 34vh;
+}
+.conhead{
+    text-align: center;
+}
+.conmain{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    
+}
+.form{
+    max-width: 344px;
+    margin: auto;
+}
+.form input{
+    /* background-color: white; */
+    margin: 3px 0;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 19px;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    /* color: black; */
+}
+.btn1{
+    background-color: transparent;
+    color: white;
+    border: 2px solid transparent;
+    font-size: 18px;
+}
+.btn-dark{
+    color: black;
+    margin-left: 140px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+.foo{
+    padding: 30px 0;
+    background-color: rgb(49, 48, 48);
+    color: white;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+
+@media only screen and (max-width: 1140px){
+    .navbar{
+        flex-direction: column;
+        height: 478px;
+        transition: all 0.7s ease-out;
+    }
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 72px;
+        width: 83vh;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .v-not{
+        opacity: 1;
+    }
+    /* .form{
+        max-width: 40%;
+    } */
+    .secRight{
+        flex-direction: column-reverse;
+    }
+    .secLeft{
+        flex-direction: column-reverse;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .button{
+        text-align: center;
+    }
+    .firstSection{
+        width: 83vh;
+    }
+}
